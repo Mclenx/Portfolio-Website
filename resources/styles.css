@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+    background-color: rgb(168, 203, 233);
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 10px;
+}
+.nav-list{
+    list-style-type:none;
+}
+li{
+    display: inline-block;
+    padding:0px 20px;
+}
+.nav a{
+color: black;
+text-decoration: none;
+}
+.nav a:hover{
+    color:rgb(255, 255, 255);
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.menu{
+    display:none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 4px;
+}
+@media  all and (max-width: 480px) {
+    .nav{
+        flex-direction: column;
+        position: relative;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-list{
+        width:100%;
+        text-align:center;
+        padding-top: 10px;
+        display:none;
+    }  
+    .active {
+        display:block;
+    }
+}
+
+.profile-pic{
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    padding:10px 0px;
+    margin: auto;   
+}
+.about{
+    padding: 45px 0px;
+    text-align: center;
+}
+ h2{
+     text-align: center;
+    padding:15px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.article{
+    padding: top 15px; 
+    margin:15px 0px;
+}
+
+.icon{
+    max-height: 60px;
+    max-width: 60px;
+    padding-left: 20px;
+  
+}
+.skills{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom:50px;
+
+}
+.project{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    padding:35px 0px;
+}
+#projects{
+    text-decoration: none;
+    color:black;
+}
+#coming-soon{
+    text-align: center;
+    font-style:italic;
+}
+
+.contact h1{
+    padding:40px 0px;
+    text-align: center;
+    font-size: 2rem;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  div.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
